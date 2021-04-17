@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-//
+
 function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => setCount(0), 7000);
     console.log("Back to 0")
-  });
+  }, []);
 
   console.log("Component rendering");
 
